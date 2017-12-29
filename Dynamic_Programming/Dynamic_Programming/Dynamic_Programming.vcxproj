@@ -27,11 +27,14 @@
     <ClCompile Include="가장_긴_바이토닉_부분수열.cpp" />
     <ClCompile Include="가장_긴_증가하는_부분수열.cpp" />
     <ClCompile Include="가장_큰_증가하는_부분수열.cpp" />
+    <ClCompile Include="계단오르기.cpp" />
     <ClCompile Include="붕어빵판매하기.cpp" />
     <ClCompile Include="쉬운계단수.cpp" />
     <ClCompile Include="스티커.cpp" />
+    <ClCompile Include="연속합.cpp" />
     <ClCompile Include="오르막수.cpp" />
     <ClCompile Include="이친수.cpp" />
+    <ClCompile Include="제곱수의합.cpp" />
     <ClCompile Include="포도주시식.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
