@@ -19,7 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="123더하기.cpp" />
     <ClCompile Include="1로만들기.cpp" />
+    <ClCompile Include="2xn타일링.cpp" />
+    <ClCompile Include="2xn타일링_2.cpp" />
+    <ClCompile Include="붕어빵판매하기.cpp" />
+    <ClCompile Include="쉬운계단수.cpp" />
+    <ClCompile Include="오르막수.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
