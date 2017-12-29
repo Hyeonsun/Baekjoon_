@@ -25,8 +25,10 @@
     <ClCompile Include="2xn타일링_2.cpp" />
     <ClCompile Include="붕어빵판매하기.cpp" />
     <ClCompile Include="쉬운계단수.cpp" />
+    <ClCompile Include="스티커.cpp" />
     <ClCompile Include="오르막수.cpp" />
     <ClCompile Include="이친수.cpp" />
+    <ClCompile Include="포도주시식.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
