@@ -35,7 +35,10 @@
     <ClCompile Include="오르막수.cpp" />
     <ClCompile Include="이친수.cpp" />
     <ClCompile Include="제곱수의합.cpp" />
+    <ClCompile Include="타일채우기.cpp" />
+    <ClCompile Include="파도반수열.cpp" />
     <ClCompile Include="포도주시식.cpp" />
+    <ClCompile Include="합분해.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

@@ -66,5 +66,14 @@
     <ClCompile Include="제곱수의합.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="타일채우기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="파도반수열.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="합분해.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
