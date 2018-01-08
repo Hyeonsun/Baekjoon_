@@ -23,6 +23,7 @@
     <ClCompile Include="1로만들기.cpp" />
     <ClCompile Include="2xn타일링.cpp" />
     <ClCompile Include="2xn타일링_2.cpp" />
+    <ClCompile Include="GCD합.cpp" />
     <ClCompile Include="가장_긴_감소하는_부분수열.cpp" />
     <ClCompile Include="가장_긴_바이토닉_부분수열.cpp" />
     <ClCompile Include="가장_긴_증가하는_부분수열.cpp" />
@@ -35,10 +36,15 @@
     <ClCompile Include="오르막수.cpp" />
     <ClCompile Include="이친수.cpp" />
     <ClCompile Include="제곱수의합.cpp" />
+    <ClCompile Include="진법변환2.cpp" />
+    <ClCompile Include="최대공약수와 최소공배수.cpp" />
     <ClCompile Include="타일채우기.cpp" />
     <ClCompile Include="파도반수열.cpp" />
     <ClCompile Include="포도주시식.cpp" />
     <ClCompile Include="합분해.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="나머지.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
