@@ -143,8 +143,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="2진수_8진수.cpp" />
     <ClCompile Include="GCD합.cpp" />
     <ClCompile Include="나머지.cpp" />
+    <ClCompile Include="진법변환.cpp" />
     <ClCompile Include="진법변환2.cpp" />
     <ClCompile Include="최대공약수_최소공배수.cpp" />
   </ItemGroup>
