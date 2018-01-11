@@ -144,6 +144,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2진수_8진수.cpp" />
+    <ClCompile Include="8진수_2진수.cpp" />
     <ClCompile Include="GCD합.cpp" />
     <ClCompile Include="나머지.cpp" />
     <ClCompile Include="진법변환.cpp" />

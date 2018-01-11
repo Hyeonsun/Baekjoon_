@@ -33,5 +33,8 @@
     <ClCompile Include="2진수_8진수.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="8진수_2진수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
