@@ -24,5 +24,14 @@
     <ClCompile Include="11399_ATM.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1541_잃어버린괄호.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1744_수묶기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2875_대회or인턴.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

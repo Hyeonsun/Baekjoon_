@@ -137,7 +137,10 @@
   <ItemGroup>
     <ClCompile Include="11047_동전 0.cpp" />
     <ClCompile Include="11399_ATM.cpp" />
+    <ClCompile Include="1541_잃어버린괄호.cpp" />
+    <ClCompile Include="1744_수묶기.cpp" />
     <ClCompile Include="1931_회의실배정.cpp" />
+    <ClCompile Include="2875_대회or인턴.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
