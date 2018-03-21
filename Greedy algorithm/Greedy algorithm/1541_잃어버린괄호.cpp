@@ -32,6 +32,8 @@ int main(void)
 	for (int i = 0; i < num.size(); i++) {
 		if (sign[i] == -1)
 			minus = true;
+		else
+			minus = false;
 		if (minus)
 			ans -= num[i];
 		else
