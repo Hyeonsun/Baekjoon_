@@ -135,10 +135,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="10610_30.cpp" />
+    <ClCompile Include="1080_행렬.cpp" />
     <ClCompile Include="11047_동전 0.cpp" />
     <ClCompile Include="11399_ATM.cpp" />
+    <ClCompile Include="1201_NMK.cpp" />
     <ClCompile Include="1541_잃어버린괄호.cpp" />
     <ClCompile Include="1744_수묶기.cpp" />
+    <ClCompile Include="1783_병든나이트.cpp" />
     <ClCompile Include="1931_회의실배정.cpp" />
     <ClCompile Include="2875_대회or인턴.cpp" />
   </ItemGroup>
