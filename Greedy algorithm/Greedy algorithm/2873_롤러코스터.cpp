@@ -51,16 +51,13 @@ int main(void)
 		int x, y;
 		x = 0;
 		y = 1;
-		for (int i = 0; i<n; i++) {
-			for (int j = 0; j<m; j++) {
-				if ((i + j) % 2 == 1) {
+		for (int i = 0; i<n; i++) 
+			for (int j = 0; j<m; j++){
+				if ((i + j) % 2 == 1) 
 					if (a[x][y] > a[i][j]) {
 						x = i;
 						y = j;
 					}
-				}
-			}
-		}
 		int x1 = 0;
 		int y1 = 0;
 		int x2 = n - 1;
