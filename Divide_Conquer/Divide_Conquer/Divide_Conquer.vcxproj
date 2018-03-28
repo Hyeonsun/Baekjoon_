@@ -135,6 +135,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="10815_숫자카드.cpp" />
+    <ClCompile Include="11728_배열나누기.cpp" />
+    <ClCompile Include="11729_하노이의탑_이동순서.cpp" />
+    <ClCompile Include="1780_종이의개수.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
