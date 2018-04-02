@@ -140,7 +140,8 @@
     <ClCompile Include="11728_배열나누기.cpp" />
     <ClCompile Include="11729_하노이의탑_이동순서.cpp" />
     <ClCompile Include="1780_종이의개수.cpp" />
-    <ClCompile Include="2268_트리의 순회.cpp" />
+    <ClCompile Include="1992_쿼드트리.cpp" />
+    <ClCompile Include="2263_트리의 순회.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
