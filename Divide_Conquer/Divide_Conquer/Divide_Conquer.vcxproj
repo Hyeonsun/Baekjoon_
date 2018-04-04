@@ -143,6 +143,7 @@
     <ClCompile Include="1992_쿼드트리.cpp" />
     <ClCompile Include="2263_트리의 순회.cpp" />
     <ClCompile Include="2447_별찍기10.cpp" />
+    <ClCompile Include="2448_별찍기11.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
