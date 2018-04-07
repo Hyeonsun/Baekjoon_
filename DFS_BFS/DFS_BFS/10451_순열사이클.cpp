@@ -9,12 +9,10 @@ bool check[1001];
 int start, co = 0, first = 1;
 void dfs(int node) {
 	check[node] = true;
-	//printf("%d %d %d\n", node, start, first);
 
 	for (int i = 0; i < a[node].size(); i++) {
 		int next = a[node][i];
 		if ((next == start && !first) || (first && next == node)) {
-			//printf("next : %d start : %d first : %d\n", next, start, first);
 			co++;
 		}
 		if (check[next] == false) {
