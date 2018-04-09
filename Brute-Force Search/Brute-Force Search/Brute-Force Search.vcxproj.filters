@@ -24,5 +24,11 @@
     <ClCompile Include="10973_이전순열.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="10974_모든순열.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1722_순열의 순서.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
