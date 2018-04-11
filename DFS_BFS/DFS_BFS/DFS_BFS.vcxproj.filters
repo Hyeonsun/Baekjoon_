@@ -42,5 +42,14 @@
     <ClCompile Include="13460_구슬탈출2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2178_미로탐색.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="7576_토마토.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2146_다리만들기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -6,7 +6,9 @@ int d[1000][1000];
 int dx[] = { 0,0,1,-1 };
 int dy[] = { 1,-1,0,0 };
 int n, m;
+
 queue<pair<int, int>> q;
+
 void bfs() {
 	while (!q.empty()) {
 		int x = q.front().first;
@@ -50,5 +52,6 @@ int main() {
 				ans = -1;
 
 	printf("%d\n", ans);
+
 	return 0;
 }
