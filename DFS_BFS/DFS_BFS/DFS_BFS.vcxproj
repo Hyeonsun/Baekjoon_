@@ -140,12 +140,15 @@
     <ClCompile Include="11724_연결 요소의 개수.cpp" />
     <ClCompile Include="1260_BFS와 DFS.cpp" />
     <ClCompile Include="13460_구슬탈출2.cpp" />
+    <ClCompile Include="1389_케빈 베이컨의 6단계 법칙.cpp" />
     <ClCompile Include="1697_숨바꼭질.cpp" />
     <ClCompile Include="1707_이분그래프.cpp" />
     <ClCompile Include="2146_다리만들기.cpp" />
     <ClCompile Include="2178_미로탐색.cpp" />
     <ClCompile Include="2331_반복수열.cpp" />
+    <ClCompile Include="2468_안전영역.cpp" />
     <ClCompile Include="2583_영역구하기.cpp" />
+    <ClCompile Include="2644_촌수계산.cpp" />
     <ClCompile Include="2667_단지번호붙이기.cpp" />
     <ClCompile Include="4963_섬의개수.cpp" />
     <ClCompile Include="7562_나이트의이동.cpp" />
