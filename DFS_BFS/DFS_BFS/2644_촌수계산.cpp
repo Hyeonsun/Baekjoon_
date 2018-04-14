@@ -1,57 +1,48 @@
 #include <cstdio>
-#include <vector>
-#include <algorithm>
 #include <queue>
 using namespace std;
 
-vector<int> hi[101];
-bool check[101];
-int co = 0, cot = 0;
-bool isOk = false;
-bool bfs(int node, int end) {
+int n;
+int a[102][102];
+bool check[102];
+int d[102];
+
+void bfs(int u, int v) {
 	queue<int> q;
-	q.push(node);
-	check[node] = true;
+	q.push(u);
+	d[u] = 0;
+	check[u] = true;
 
 	while (!q.empty()) {
-		int next = q.front();
+		int cur = q.front();
 		q.pop();
-		cot++;
-		for (int i = 0; i < hi[next].size(); i++) {
-			int y = hi[next][i];
-			if (check[y] == false) {
-				check[y] = true;
-				q.push(y);
-				co = cot;
-				if (y == end) {
-					printf("%d\n", co);
-					isOk = true;
-				}
+		int dist = d[cur];
+		for (int i = 1; i <= n; i++) {
+			if (check[i] == false && a[cur][i] == 1) {
+				check[i] = 1;
+				q.push(i);
+				d[i] = dist + 1;
 			}
 		}
 	}
-	return isOk;
 }
-
 int main(void)
 {
-	int n;
 	scanf("%d", &n);
-	int a, b;
-	scanf("%d %d", &a, &b);
+	int u, v;
+	scanf("%d %d", &u, &v);	// 부모는 u, 자식은 v
 
 	int m;
 	scanf("%d", &m);
 	for (int i = 0; i < m; i++) {
-		int u, v;
-		scanf("%d %d", &u, &v);
-		hi[u].push_back(v); hi[v].push_back(u);
+		int x, y;
+		scanf("%d %d", &x, &y);
+		a[x][y] = 1;
+		a[y][x] = 1;		//그래프를 만들어줘
 	}
-	if (a == b) {
-		puts("0");
-	}
-	else if (!bfs(a, b))
-		puts("-1");
+	bfs(u, v);
+
+	printf("%d\n", d[v] ? d[v] : -1);
 
 	return 0;
 }
