@@ -135,6 +135,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1167_트리의 지름.cpp" />
+    <ClCompile Include="11725_트리의부모찾기.cpp" />
+    <ClCompile Include="1967_트리의 지름.cpp" />
+    <ClCompile Include="1991_트리 순회.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

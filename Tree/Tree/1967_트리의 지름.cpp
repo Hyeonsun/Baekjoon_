@@ -16,7 +16,7 @@ struct Edge {
 vector<Edge> a[MAX];
 bool check[MAX];
 int dist[MAX];
-
+	
 void bfs(int start) {
 	memset(dist, 0, sizeof(dist));
 	memset(check, false, sizeof(check));
