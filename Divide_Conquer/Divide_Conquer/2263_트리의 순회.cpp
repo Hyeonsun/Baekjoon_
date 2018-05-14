@@ -1,42 +1,31 @@
-//#include <cstdio>
-//using namespace std;
-//
-//int inorder[100001];
-//int postorder[100001];
-//int position[100001];
-//
-//void getPreorder(int inStart, int inEnd, int postStart, int postEnd) {
-//	if (inStart > inEnd || postStart > postEnd) return;
-//	int root = postorder[postEnd];
-//	printf("%d ", root);
-//	int p = position[root];
-//	int left = p - inStart;
-//	getPreorder(inStart, p - 1, postStart, postStart + left - 1);
-//	getPreorder(p + 1, inEnd, postStart + left, postEnd - 1);
-//}
-//
-//int main(void)
-//{
-//	int n;
-//	scanf("%d", &n);
-//
-//	for (int i = 0; i < n; i++) scanf("%d", &inorder[i]);
-//	for (int i = 0; i < n; i++) scanf("%d", &postorder[i]);
-//	for (int i = 0; i < n; i++) position[inorder[i]] = i;
-//	getPreorder(0, n - 1, 0, n - 1);
-//	puts("");
-//	return 0;
-//}
-
-
-#include <set>
 #include <cstdio>
 using namespace std;
 
+int postorder[100000];
+int inorder[100000];
+int position[100000];
+int n;
+
+void solve(int in_start, int in_end, int post_start, int post_end) {
+	if (in_start > in_end || post_start > post_end) return;
+	int root = postorder[post_end];
+	printf("%d ", root);
+	int p = position[root];
+	int left = p - in_start;
+
+	solve(in_start, p - 1, post_start, post_start + left - 1);
+	solve(p + 1, in_end, post_start + left, post_end - 1);
+}
+
 int main(void)
 {
-	multiset<int> a;
-	a.insert(5);
-	a.insert(5);
-	printf("%d\n", a.size());
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++)  scanf("%d", &inorder[i]);
+	for (int i = 0; i < n; i++) scanf("%d", &postorder[i]);
+
+	for (int i = 0; i < n; i++) position[inorder[i]] = i;
+
+	solve(0, n - 1, 0, n - 1);
+
+	return 0;
 }
