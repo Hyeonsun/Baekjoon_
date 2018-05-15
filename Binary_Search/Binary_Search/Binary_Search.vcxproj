@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{9BBD4BFE-A315-4CD7-9DF6-D6803ECB5EF5}</ProjectGuid>
+    <ProjectGuid>{9ADDEFC1-6BC9-4BC4-93C9-5FE451E00669}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>DivideConquer</RootNamespace>
+    <RootNamespace>BinarySearch</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -135,16 +135,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="1074_Z.cpp" />
-    <ClCompile Include="10815_숫자카드.cpp" />
-    <ClCompile Include="10816_숫자카드2.cpp" />
-    <ClCompile Include="11728_배열합치기.cpp" />
-    <ClCompile Include="11729_하노이의탑_이동순서.cpp" />
-    <ClCompile Include="1780_종이의개수.cpp" />
-    <ClCompile Include="1992_쿼드트리.cpp" />
-    <ClCompile Include="2263_트리의 순회.cpp" />
-    <ClCompile Include="2447_별찍기10.cpp" />
-    <ClCompile Include="2448_별찍기11.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
