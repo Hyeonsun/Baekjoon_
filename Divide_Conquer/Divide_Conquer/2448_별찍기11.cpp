@@ -1,58 +1,45 @@
-#include <stdio.h>
-#include <stdlib.h>
-#define BLANK 0
-#define STAR 1
-void go(char **a, int x, int y, int n, int color) {
-	int i, j, k;
-	if (color == BLANK) {
-		k = 2 * n - 1;
-		for (i = x; i<x + n; i++) {
-			for (j = 0; j<k; j++) {
-				a[i][j + i - x + y] = ' ';
-			}
-			k -= 2;
-		}
+#include <cstdio>
+using namespace std;
+
+char a[3072][6144];
+
+void star(int n, int x, int y) {
+	if (n == 3) {	//높이가 3이라면 별을 만들어 출력한다.
+					//별을 그린다.
+		a[y][x] = '*';
+		a[y + 1][x - 1] = '*';
+		a[y + 1][x + 1] = '*';
+		a[y + 2][x - 2] = '*';
+		a[y + 2][x - 1] = '*';
+		a[y + 2][x] = '*';
+		a[y + 2][x + 1] = '*';
+		a[y + 2][x + 2] = '*';
+		return;
 	}
-	else if (color == STAR) {
-		if (n != 1) {
-			int m = n / 2;
-			go(a, x, y, m, STAR);
-			go(a, x + m, y - m, m, STAR);
-			go(a, x + m, y + m, m, STAR);
-			if (n == 3) {
-				go(a, x + 1, y, 1, BLANK);
-			}
-			else {
-				go(a, x + m, y - m + 1, m, BLANK);
-			}
-		}
-	}
+	star(n / 2, x, y);	// 각각의 삼각형의 높이와 위치 값을 이용해 재귀
+	star(n / 2, x - (n / 2), y + (n / 2));
+	star(n / 2, x + (n / 2), y + (n / 2));
 }
-int main() {
-	int n;
-	int i, j;
-	char **a;
+
+int main(void)
+{
+	int n, i, j;
+
 	scanf("%d", &n);
-	a = (char **)malloc(sizeof(char *)*n);
-	for (i = 0; i<n; i++) {
-		a[i] = (char *)malloc(sizeof(char)*(2 * n + 1));
-	}
-	for (i = 0; i<n; i++) {
-		for (j = 0; j<2 * n; j++) {
-			a[i][j] = '*';
+
+	// 배열 초기화
+	for (i = 0; i < n; i++) {
+		for (j = 0; j < 2 * n; j++) {
+			if (j == 2 * n - 1) a[i][j] = '\0';
+			else a[i][j] = ' ';
 		}
-		a[i][2 * n] = 0;
 	}
-	go(a, 0, n - 1, n, STAR);
-	for (i = 0; i<n; i++) {
-		for (j = 0; j<n - i - 1; j++) {
-			a[i][j] = ' ';
-			a[i][2 * n - j - 2] = ' ';
-		}
-		a[i][2 * n - 1] = ' ';
-	}
-	for (i = 0; i<n; i++) {
+
+	star(n, n - 1, 0);	//삼각형의 높이와, 삼각형의 맨위 꼭지점 좌표를 넘겨준다.
+
+						//삼각형 출력
+	for (i = 0; i < n; i++)
 		printf("%s\n", a[i]);
-	}
+
 	return 0;
 }

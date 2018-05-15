@@ -1,38 +1,42 @@
 #include <cstdio>
 using namespace std;
-int a[65][65];
+int n;
+int a[64][64];
 
-bool same(int row, int col, int size) {
-	for (int i = row; i < row + size; i++)
-		for (int j = col; j < col + size; j++)
-			if (a[row][col] != a[i][j])
-				return false;
-	return true;
-}
-void solve(int row, int col, int size) {
-	int data = a[row][col];
-
-	if (same(row, col, size)) {
-		printf("%d", data);
+int checkSame(int x, int y, int n) {
+	for (int i = x; i < x + n; i++) {
+		for (int j = y; j < y + n; j++) {
+			if (a[x][y] != a[i][j])
+				return -1;
+		}
 	}
-	else {
-		int resize = size / 2;
+	return a[x][y];
+}
+
+void solve(int x, int y, int n) {
+	int temp = checkSame(x, y, n);
+
+	if (temp == -1) {
 		printf("(");
-		solve(row, col, resize);
-		solve(row, col + resize, resize);
-		solve(row + resize, col, resize);
-		solve(row + resize, col + resize, resize);
+		int length = n / 2;
+		for (int i = 0; i < 2; i++) {
+			for (int j = 0; j < 2; j++) {
+				solve(x + length * i, y + length*j, length);
+			}
+		}
 		printf(")");
 	}
+	else printf("%d", temp);
 }
+
 int main(void)
 {
-	int n;
 	scanf("%d", &n);
-	for (int i = 0; i < n; i++)
-		for (int j = 0; j < n; j++)
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
 			scanf("%1d", &a[i][j]);
+		}
+	}
 
 	solve(0, 0, n);
-	return 0;
 }
