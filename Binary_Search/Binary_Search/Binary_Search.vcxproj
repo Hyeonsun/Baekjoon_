@@ -135,6 +135,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1654_랜선자르기.cpp" />
+    <ClCompile Include="1939_중량제한.cpp" />
+    <ClCompile Include="2110_공유기설치.cpp" />
+    <ClCompile Include="2805_나무자르기.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
