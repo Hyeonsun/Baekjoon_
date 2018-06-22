@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -136,8 +136,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="10799_쇠막대기.cpp" />
+    <ClCompile Include="10808_알파벳개수.cpp" />
+    <ClCompile Include="10809_알파벳찾기.cpp" />
+    <ClCompile Include="10820_문자열분석.cpp" />
+    <ClCompile Include="10824_네 수.cpp" />
     <ClCompile Include="10828_스택.cpp" />
+    <ClCompile Include="10845_큐.cpp" />
+    <ClCompile Include="10866_덱.cpp" />
+    <ClCompile Include="1158_조세퍼스문제.cpp" />
+    <ClCompile Include="11655_ROT13.cpp" />
+    <ClCompile Include="11656_접미사 배열.cpp" />
     <ClCompile Include="1406_에디터.cpp" />
+    <ClCompile Include="2743_단어길이재기.cpp" />
     <ClCompile Include="9012_괄호.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,27 +1,24 @@
 #include <iostream>
-#include <string>
 #include <stack>
+#include <string>
 using namespace std;
-
 int main(void)
 {
-	string a;
-	cin >> a;
-	int n = a.size();
-
+	string str;
+	cin >> str;
 	stack<int> s;
 	int ans = 0;
 
-	for (int i = 0; i < n; i++) {
-		if (a[i] == '(') s.push(i);	// stack에 ( 의 인덱스를 넣는다.
+	for (int i = 0; i < str.size(); i++) {
+		if (str[i] == '(') s.push(i);
 		else {
-			if (s.top() + 1 == i) {	// () 이면  --> 레이저
+			if (s.top() + 1 == i) { //레이저
 				s.pop();
 				ans += s.size();
 			}
-			else {	// ()가 아니면 --> 쇠막대기
+			else {
 				s.pop();
-				ans += 1;
+				ans++;
 			}
 		}
 	}
