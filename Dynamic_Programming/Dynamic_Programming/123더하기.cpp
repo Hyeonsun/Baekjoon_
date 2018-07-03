@@ -1,16 +1,22 @@
-#include <stdio.h>
-
+#include <cstdio>
+using namespace std;
+int d[11];
 int main(void)
 {
-	int N, T;
-	int d[12];
-	scanf("%d", &T);
-	d[1] = 1; d[2] = 2; d[3] = 4;
-	for (int i = 0; i < T; i++) {
-		scanf("%d", &N);
-		for (int j = 4; j <= N; j++)
-			d[j] = d[j - 1] + d[j - 2] + d[j - 3];
-		printf("%d\n", d[N]);
+	d[0] = 1;
+	d[1] = 1;
+	d[2] = 2;
+
+
+	int t;
+	scanf("%d", &t);
+	while (t--) {
+		int n;
+		scanf("%d", &n);
+		for (int i = 3; i <= n; i++) {
+			d[i] = d[i - 1] + d[i - 2] + d[i - 3];
+		}
+		printf("%d\n", d[n]);
 	}
 
 	return 0;

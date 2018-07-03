@@ -1,24 +1,23 @@
-#include <iostream>
-#include <vector>
+#include <cstdio>
 #include <algorithm>
 using namespace std;
 
+int d[1001];
+int a[10001];
 int main(void)
 {
 	int n;
-
-	cin >> n;
-	vector<int> p(n + 1);
+	scanf("%d", &n);
 	for (int i = 1; i <= n; i++)
-		cin >> p[i];
+		scanf("%d", &a[i]);
 
-	vector<int> d(n + 1);
-
+	d[0] = 0;
 	for (int i = 1; i <= n; i++) {
 		for (int j = 1; j <= i; j++) {
-			d[i] = max(d[i], d[i - j] + p[j]);
+			d[i] = max(d[i], d[i - j] + a[j]);
 		}
 	}
-	cout << d[n] << '\n';
+
+	printf("%d\n", d[n]);
 	return 0;
 }
