@@ -1,27 +1,34 @@
-#include <iostream>
+#include <cstdio>
 #include <stack>
-#include <string>
+#include <cstring>
 using namespace std;
+
 int main(void)
 {
-	string str;
-	cin >> str;
 	stack<int> s;
-	int ans = 0;
+	int co = 0;
 
-	for (int i = 0; i < str.size(); i++) {
-		if (str[i] == '(') s.push(i);
+	char str[100001];
+	scanf("%s", str);
+
+	int len = strlen(str);
+
+	for (int i = 0; i < len; i++) {
+		if (str[i] == '(') {
+			s.push(i);
+		}
 		else {
-			if (s.top() + 1 == i) { //레이저
+			if (s.top() + 1 == i) { //레이저인 경우
 				s.pop();
-				ans += s.size();
+				co += s.size();
 			}
-			else {
+			else {// 쇠막대기인경우
 				s.pop();
-				ans++;
+				co++;
 			}
 		}
 	}
-	cout << ans << '\n';
+
+	printf("%d\n", co);
 	return 0;
 }
