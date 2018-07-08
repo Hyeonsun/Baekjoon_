@@ -1,26 +1,29 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
+#include <cstdio>
 using namespace std;
+
+int  d[1001], a[1001];
 
 int main(void)
 {
 	int n;
-	cin >> n;
-
-	vector<int> a(n + 1);
-	vector<int> d(n + 1);
+	scanf("%d", &n);
 
 	for (int i = 1; i <= n; i++)
-		cin >> a[i];
+		scanf("%d", &a[i]);
 
 	for (int i = 1; i <= n; i++) {
 		d[i] = 1;
-		for (int j = 0; j < i; j++) {
-			if (a[j]<a[i] && d[j] + 1 > d[i])
+		for (int j = 1; j < i; j++) {	// i>j
+			if (a[i] > a[j] && d[j] + 1 > d[i])
 				d[i] = d[j] + 1;
 		}
 	}
-	cout << *max_element(d.begin(), d.end()) << '\n';
+
+	int ans = d[1];
+	for (int i = 2; i <= n; i++)
+		if (ans < d[i])
+			ans = d[i];
+
+	printf("%d\n", ans);
 	return 0;
 }

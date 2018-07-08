@@ -75,5 +75,8 @@
     <ClCompile Include="합분해.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="가장_긴_증가하는_부분수열_2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
