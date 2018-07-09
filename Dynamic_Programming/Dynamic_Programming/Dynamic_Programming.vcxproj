@@ -27,6 +27,7 @@
     <ClCompile Include="가장_긴_바이토닉_부분수열.cpp" />
     <ClCompile Include="가장_긴_증가하는_부분수열.cpp" />
     <ClCompile Include="가장_긴_증가하는_부분수열_2.cpp" />
+    <ClCompile Include="가장_긴_증가하는_부분수열_3.cpp" />
     <ClCompile Include="가장_큰_증가하는_부분수열.cpp" />
     <ClCompile Include="계단오르기.cpp" />
     <ClCompile Include="붕어빵판매하기.cpp" />
