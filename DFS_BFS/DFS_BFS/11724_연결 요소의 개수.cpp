@@ -1,11 +1,21 @@
 #include <cstdio>
 #include <vector>
-#include <algorithm>
 #include <queue>
+#include <algorithm>
 using namespace std;
 
-vector<int> a[1001];
 bool check[1001];
+vector<int> a[1001];
+
+void dfs(int node) {
+	check[node] = true;
+
+	for (int i = 0; i < a[node].size(); i++) {
+		int next = a[node][i];
+		if (check[next] == false)
+			dfs(next);
+	}
+}
 
 void bfs(int start) {
 	queue<int> q;
@@ -13,15 +23,13 @@ void bfs(int start) {
 	q.push(start);
 
 	while (!q.empty()) {
-		int x = q.front();
+		int node = q.front();
 		q.pop();
-
-		for (int i = 0; i < a[x].size(); i++) {
-			int y = a[x][i];
-
-			if (check[y] == false) {
-				check[y] = true;
-				q.push(y);
+		for (int i = 0; i < a[node].size(); i++) {
+			int next = a[node][i];
+			if (check[next] == false) {
+				check[next] = true;
+				q.push(next);
 			}
 		}
 	}
@@ -29,7 +37,7 @@ void bfs(int start) {
 
 int main(void)
 {
-	int n, m, start;
+	int n, m;
 	scanf("%d %d", &n, &m);
 
 	for (int i = 0; i < m; i++) {
@@ -38,17 +46,15 @@ int main(void)
 		a[u].push_back(v);
 		a[v].push_back(u);
 	}
-	int count = 0;
-	for (int i = 1; i <= n; i++)
-		sort(a[i].begin(), a[i].end());
 
-
+	int co = 0;
 	for (int i = 1; i <= n; i++) {
 		if (check[i] == false) {
-			bfs(i);
-			count++;
+			dfs(i);	//BFS(I)
+			co++;
 		}
 	}
-	printf("%d\n", count);
+
+	printf("%d\n", co);
 	return 0;
 }

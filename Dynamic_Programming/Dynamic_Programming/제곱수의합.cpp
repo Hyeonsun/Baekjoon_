@@ -1,24 +1,23 @@
-#include <iostream>
-#include <vector>
+#include <cstdio>
 #include <algorithm>
 using namespace std;
+
+int d[100001];
 
 int main(void)
 {
 	int n;
-	cin >> n;
-
-	vector<int> d(n + 1);
-
+	scanf("%d", &n);
 
 	for (int i = 1; i <= n; i++) {
 		d[i] = i;
-		for (int j = 1; j*j <= i; j++) {
-			d[i] = min(d[i], d[i - (j*j)] + 1);
+		for (int j = 1; j * j <= i; j++) {
+			if (d[i] > d[i - j*j] + 1)
+				d[i] = d[i - j*j] + 1;
 		}
 	}
-	long long ans = d[n];
-	cout << ans << '\n';
+
+	printf("%d\n", d[n]);
 
 	return 0;
 }
