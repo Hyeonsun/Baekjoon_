@@ -138,7 +138,9 @@
     <ClCompile Include="10972_다음순열.cpp" />
     <ClCompile Include="10973_이전순열.cpp" />
     <ClCompile Include="10974_모든순열.cpp" />
+    <ClCompile Include="1107_리모콘.cpp" />
     <ClCompile Include="11723_집합.cpp" />
+    <ClCompile Include="1476_날짜계산.cpp" />
     <ClCompile Include="1722_순열의 순서.cpp" />
     <ClCompile Include="2309_일곱난장이.cpp" />
   </ItemGroup>
