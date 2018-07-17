@@ -6,20 +6,20 @@ using namespace std;
 
 int a[10];
 
-bool next_permutation(int n, int a[]) {
-	int i = n - 1;
-	while (i > 0 && a[i - 1] >= a[i]) i--;
-	if (i <= 0) return false;
-	int j = n - 1;
-	while (a[j] <= a[i - 1]) j--;
-	swap(a[i - 1], a[j]);
-	j = n - 1;
-	while (i < j) {
-		swap(a[i], a[j]);
-		i++; j--;
-	}
-	return true;
-}
+//bool next_permutation(int n, int a[]) {
+//	int i = n - 1;
+//	while (i > 0 && a[i - 1] >= a[i]) i--;
+//	if (i <= 0) return false;
+//	int j = n - 1;
+//	while (a[j] <= a[i - 1]) j--;
+//	swap(a[i - 1], a[j]);
+//	j = n - 1;
+//	while (i < j) {
+//		swap(a[i], a[j]);
+//		i++; j--;
+//	}
+//	return true;
+//}
 
 
 int main(void)

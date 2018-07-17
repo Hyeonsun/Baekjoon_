@@ -8,8 +8,8 @@ int a[10001];
 
 bool next_permutation(int n, int a[]) {
 	int i = n - 1;
-	while (i > 0 && a[i - 1] >= a[i]) i--;
-	if (i <= 0) return false;
+	while (i > 0 && a[i - 1] >= a[i]) i--; 
+	if (i <= 0) return false; // 다음순열 없음
 	int j = n - 1;
 	while (a[j] <= a[i - 1]) j--;
 	swap(a[i - 1], a[j]);
@@ -18,7 +18,7 @@ bool next_permutation(int n, int a[]) {
 		swap(a[i], a[j]);
 		i++; j--;
 	}
-	return true;
+	return true;	// next_permutaion success
 }
 
 
