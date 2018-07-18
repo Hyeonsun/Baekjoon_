@@ -48,5 +48,8 @@
     <ClCompile Include="1748_수 이어쓰기1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="10819_차이를 최대로.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
