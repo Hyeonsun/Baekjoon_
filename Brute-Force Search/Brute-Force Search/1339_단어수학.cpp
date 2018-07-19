@@ -27,7 +27,7 @@ int main() {
 	vector<char> letters;
 	for (int i = 0; i<n; i++) {
 		cin >> a[i];
-		for (char x : a[i]) {
+		for (char x : a[i]) {						
 			letters.push_back(x);
 		}
 	}

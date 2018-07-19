@@ -51,5 +51,11 @@
     <ClCompile Include="10819_차이를 최대로.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2529_부등호.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1339_단어수학.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
