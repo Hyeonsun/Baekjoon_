@@ -57,5 +57,17 @@
     <ClCompile Include="1339_단어수학.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="10971_외판원순회2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6603_로또.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="14888_연산자 끼워넣기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="14889_스타트와 링크.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

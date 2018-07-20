@@ -26,7 +26,7 @@ int main(void)
 		int sum = 0;
 		for (int i = 0; i < n - 1; i++) {
 			if (w[d[i]][d[i + 1]] == 0)		// 번호에서 다음 번호까지의 가중치가 0이면 false
-				ok = false;
+				ok = false;	
 			else
 				sum += w[d[i]][d[i + 1]];
 		}

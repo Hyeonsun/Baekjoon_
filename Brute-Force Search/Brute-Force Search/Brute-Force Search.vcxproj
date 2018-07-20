@@ -136,6 +136,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="10819_차이를 최대로.cpp" />
+    <ClCompile Include="10971_외판원순회2.cpp" />
     <ClCompile Include="10972_다음순열.cpp" />
     <ClCompile Include="10973_이전순열.cpp" />
     <ClCompile Include="10974_모든순열.cpp" />
@@ -144,11 +145,14 @@
     <ClCompile Include="1339_단어수학.cpp" />
     <ClCompile Include="14500_테트로미노.cpp" />
     <ClCompile Include="1476_날짜계산.cpp" />
+    <ClCompile Include="14888_연산자 끼워넣기.cpp" />
+    <ClCompile Include="14889_스타트와 링크.cpp" />
     <ClCompile Include="1722_순열의 순서.cpp" />
     <ClCompile Include="1748_수 이어쓰기1.cpp" />
     <ClCompile Include="2309_일곱난장이.cpp" />
     <ClCompile Include="2529_부등호.cpp" />
     <ClCompile Include="6064_카잉달력.cpp" />
+    <ClCompile Include="6603_로또.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
