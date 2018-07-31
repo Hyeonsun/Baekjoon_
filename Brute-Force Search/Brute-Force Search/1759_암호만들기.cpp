@@ -1,42 +1,48 @@
-#include <algorithm>
 #include <iostream>
-#include <string>
+#include <algorithm>
 #include <vector>
+#include <string>
 using namespace std;
-bool check(string &password) {
+
+bool check(string password) {
     int ja = 0;
     int mo = 0;
-    for (char x : password) {
-        if (x == 'a' || x == 'e' || x == 'i' || x == 'o' || x == 'u') {
-            mo += 1;
-        } else {
-            ja += 1;
-        }
+    for(char x: password) {
+        if(x=='a' || x == 'e' || x=='i' || x=='o' || x=='u')
+            mo++;
+        else
+            ja++;
     }
-    return ja >= 2 && mo >= 1;
+    return ja>=2 && mo>=1;
 }
+
 void go(int n, vector<char> &alpha, string password, int i) {
-    if (password.length() == n) {
-        if (check(password)) {
-            cout << password << '\n';
-        }
+    
+    //정답이 되는경우
+    if(password.length() == n){
+        if(check(password))
+            cout<<password <<'\n';
         return;
     }
-    if (i == alpha.size()) return;
-    go(n, alpha, password+alpha[i], i+1);
-    go(n, alpha, password, i+1);
+    //정답이 안되는경우
+    if(alpha.size() == i) return;
+    
+    //다음경우
+    go(n, alpha, password + alpha[i], i +1); //패스워드 가능한 문자
+    go(n, alpha, password, i+1); //패스워드 불가능한 문자
 }
-int main() {
-    int n, m;
-    cin >> n >> m;
-    vector<char> a(m);
-    for (int i=0; i<m; i++) {
-        cin >> a[i];
+
+int main(void)
+{
+    int l, c;
+    cin >> l >> c;
+    vector<char> alpha(c);
+    for(int i = 0;i<c;i++) {
+        cin >> alpha[i];
     }
-    
-    sort(a.begin(), a.end());
-    
-    go(n, a, "", 0);
+    sort(alpha.begin(), alpha.end());
+    go(l, alpha, "", 0);
     
     return 0;
 }
+
