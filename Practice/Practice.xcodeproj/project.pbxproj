@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9682D40F210F0137008823C7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9682D40E210F0137008823C7 /* main.cpp */; };
+		96C9334B21105065009D97CB /* 1759_암호만들기.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96C9334A21105065009D97CB /* 1759_암호만들기.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		9682D40B210F0137008823C7 /* Practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Practice; sourceTree = BUILT_PRODUCTS_DIR; };
 		9682D40E210F0137008823C7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		96C9334A21105065009D97CB /* 1759_암호만들기.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "1759_암호만들기.cpp"; path = "../../Brute-Force Search/Brute-Force Search/1759_암호만들기.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				9682D40E210F0137008823C7 /* main.cpp */,
+				96C9334A21105065009D97CB /* 1759_암호만들기.cpp */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
@@ -118,6 +121,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C9334B21105065009D97CB /* 1759_암호만들기.cpp in Sources */,
 				9682D40F210F0137008823C7 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

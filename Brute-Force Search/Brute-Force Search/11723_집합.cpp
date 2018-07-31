@@ -16,7 +16,7 @@ int main(void)
 		scanf("%s", b);
 		if (!strcmp(b, "add")) {
 			scanf("%d", &x); x--;
-			s = (s | (1 << x));
+			s = (s | (1 << x));a
 		}
 		else if (!strcmp(b, "remove")) {
 			scanf("%d", &x); x--;
