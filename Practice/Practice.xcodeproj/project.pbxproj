@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9677627C21252EF300B21B7D /* 11066_파일합치기.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9677627B21252EF300B21B7D /* 11066_파일합치기.cpp */; };
 		9682D40F210F0137008823C7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9682D40E210F0137008823C7 /* main.cpp */; };
-		96DC5E8021203B510091D395 /* 1517_버블소트.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96DC5E7F21203B510091D395 /* 1517_버블소트.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,9 +24,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9677627B21252EF300B21B7D /* 11066_파일합치기.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "11066_파일합치기.cpp"; path = "../../Dynamic_Programming/Dynamic_Programming/11066_파일합치기.cpp"; sourceTree = "<group>"; };
 		9682D40B210F0137008823C7 /* Practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Practice; sourceTree = BUILT_PRODUCTS_DIR; };
 		9682D40E210F0137008823C7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		96DC5E7F21203B510091D395 /* 1517_버블소트.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "1517_버블소트.cpp"; path = "../../Divide_Conquer/Divide_Conquer/1517_버블소트.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				9682D40E210F0137008823C7 /* main.cpp */,
-				96DC5E7F21203B510091D395 /* 1517_버블소트.cpp */,
+				9677627B21252EF300B21B7D /* 11066_파일합치기.cpp */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
@@ -121,7 +121,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96DC5E8021203B510091D395 /* 1517_버블소트.cpp in Sources */,
+				9677627C21252EF300B21B7D /* 11066_파일합치기.cpp in Sources */,
 				9682D40F210F0137008823C7 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
