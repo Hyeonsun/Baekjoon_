@@ -1,27 +1,31 @@
-#include <cstdio>
+#include <iostream>
 #include <algorithm>
-#include <vector>
 using namespace std;
-int main() {
+int a[100][100];
+long long  d[100][100];
+
+int main(void)
+{
     int n;
-    scanf("%d",&n);
-    vector<int> a(n),b(n),c(n),d(n);
-    for (int i=0; i<n; i++) {
-        scanf("%d %d %d %d",&a[i],&b[i],&c[i],&d[i]);
-    }
-    vector<int> first, second;
-    for (int i=0; i<n; i++) {
-        for (int j=0; j<n; j++) {
-            first.push_back(a[i]+b[j]);
-            second.push_back(c[i]+d[j]);
+    cin >> n;
+    for(int i = 0;i<n;i++)
+        for(int j = 0;j<n;j++)
+            cin >> a[i][j];
+    
+    d[0][0] = 1;
+    for(int i = 0;i<n;i++) {
+        for(int j = 0;j<n;j++) {
+            if(i == 0 && j==0) continue;
+            for(int k = 0;k<j;k++) {
+                if(k + a[i][k] == j)
+                    d[i][j] += d[i][k];
+            }
+            for(int k = 0;k<i;k++) {
+                if(k + a[k][j] == i)
+                    d[i][j] += d[k][j];
+            }
         }
     }
-    sort(second.begin(),second.end());
-    long long ans = 0;
-    for (int num : first) {
-        auto range = equal_range(second.begin(), second.end(), -num);
-        ans += range.second-range.first;
-    }
-    printf("%lld\n",ans);
+    cout << d[n-1][n-1]<< '\n';
     return 0;
 }
